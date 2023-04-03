@@ -15,6 +15,10 @@
             height: 80px;
             margin-bottom: 10px;
         }
+
+        span{
+            background-color: yellow;
+        }
     
     </style>
 </head>
@@ -26,7 +30,14 @@
     </section>
     <script>
         function media(){
-            var n1 = 
+            var nome = window.prompt('Qual é o nome do aluno?')
+            var n1 = Number(window.prompt(`Qual foi a primeira nota de ${nome}?`))
+            var n2 = Number(window.prompt(`Além de ${n1}, qual foi a outra nota de ${nome}?`))
+            var s = (n1 + n2)/2
+            var res = window.document.getElementById('resultado')
+            res.innerHTML = `Calculando a média final de <span>${nome}</span>.<br>`
+            res.innerHTML += `As notas obtidas foram <span>${n1} e ${n2}</span>.<br>`
+            res.innerHTML += `A média final será <span>${s}</span>.`
         }
     </script>
 </body>

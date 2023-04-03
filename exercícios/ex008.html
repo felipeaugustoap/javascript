@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Números com JS</title>
+    <style>
+        body, button{
+            font: normal 16px Arial;
+        }
+
+        button {
+            width: 150px;
+            height: 80px;
+            margin-bottom: 10px;
+        }
+
+        /* span{
+            background-color: yellow;
+        } */
+
+        .res{
+            border-bottom: 1px solid black;
+            padding-bottom: 10px;
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>Vários cálculos em JS</h1>
+    <button id="calculo" onclick="calcular()">Clique para calcular</button>
+    <section id="resultado">
+        <p>O resultado vai aparecer aqui...</p>
+    </section>
+    <script>
+        function calcular(){
+            var n1 = Number(window.prompt('Digite um número:'))
+            var absoluto = Math.abs(n1)
+            var pinter = Math.trunc(n1)
+            var inter = Math.round(n1)
+            var raiz = Math.sqrt(n1)
+            var raiz3 = Math.cbrt(n1)
+            var potencia2 = n1**2
+            var potencia3 = n1**3
+            var res = document.getElementById('resultado')
+            res.innerHTML = `<p class= "res">O número a ser analisado aqui será o <strong>${n1}</strong>.</p>`
+            res.innerHTML += `<p>O valor absoluto é ${absoluto};</p>`
+            res.innerHTML += `<p>A sua parte inteira é ${pinter};</p>`
+            res.innerHTML += `<p>O valor inteiro mais próximo é ${inter};</p>`
+            res.innerHTML += `<p>A sua raiz quadrada é ${raiz};</p>`
+            res.innerHTML += ` <p>A sua raiz cúbica é ${raiz3};</p>`
+            res.innerHTML += `<p>O valor de ${n1}<sup>2</sup> é ${potencia2};</p>`
+            res.innerHTML += `<p>O valor de ${n1}<sup>3</sup> é ${potencia3}.</p>`
+        }
+    </script>
+</body>
+</html>
