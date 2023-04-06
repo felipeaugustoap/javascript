@@ -9,7 +9,7 @@ function carregar(){
         //Bom dia
         img.src = 'media/manhã300.png'
         document.body.style.backgroundColor = '#feaf78'
-    } else if( hora > 12 && hora < 18) {
+    } else if( hora > 12 && hora <= 18) {
         //boa tarde
         img.src = 'media/tarde250.png'
         document.body.style.backgroundColor = '#d26a1a'
@@ -19,5 +19,3 @@ function carregar(){
         document.body.style.backgroundColor = '#1d333e'
     }
 }
-
-
