@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+        body, button{
+            font: normal 12pt Arial;
+        }
+
+        h1, h2{
+            font-family: 'Pacifico', cursive;
+            font-weight: normal;
+        }
+
+        section {
+            margin: 0;
+            
+        }
+
+        input {
+            font-size: 12pt;
+            
+        }
+
+        button {
+            font-size: 12pt;
+            padding: 5px;
+            background-color: green;
+            color: white;
+            
+        }
+        
